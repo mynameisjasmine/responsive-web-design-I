@@ -72,8 +72,17 @@ h1, h2, h3, h4, h5 {
 @media(max-width: 800px){
     .container {
       width: 100%;
-      /* border: 2px solid red;  */
-    } 
+       /* border: 2px solid red;  
+    }  */
+        }
+}
+
+@media(max-width:500px){
+    .container {
+        width: 90%;
+        
+       /* border: 2px solid red;   */
+    }  
         
 }
 
@@ -98,8 +107,9 @@ header {
 @media (max-width: 500px) {
     header {
         height: 2.5rem;
-         /* border: 2px solid red;   */
-        
+        width: 100%;
+        /* border: 2px solid red;    */
+         
     }
 }
 
@@ -128,10 +138,17 @@ header nav {
 
 @media (max-width: 500px) {
     header nav {
-        /* border: 2px solid red;  */
+          border: 2px solid red;
+
+        
+         width: 100%;
         flex-direction: column;
-        align-items: center;
+        /* padding: 0; */
+        /* align-items: center; */
+        /* position: relative; */
+        /* right: 9rem;  */
         margin-top: -1rem;
+        
         
         
             
@@ -140,7 +157,7 @@ header nav {
 
       img.logo {
     margin: 28px 0 0 91px;
-     /* border: 2px solid red;  */
+      /* border: 2px solid red;   */
 } 
 
 @media (max-width: 800px) {
@@ -156,9 +173,10 @@ header nav {
     img.logo {
         position: relative;
         top: -7.5rem;
-        right: 9rem;
+        right: 7rem;
         padding-top: 2rem;
-    /* border: 2px solid red    */
+         /* border: 2px solid red; */
+            
     }
 }
 
@@ -174,6 +192,22 @@ header nav a:hover {
     color: black;
 }
 
+
+@media (max-width: 500px) {
+
+    header nav a {
+    border-top: 1px solid gray;
+    width: 100%;
+    position: relative;
+    left: 11rem;
+    } 
+    
+    .nav-link {
+         /* padding: 10px 0; */
+        /*border: 2px solid red; */
+    }
+}
+
  
 
 
@@ -181,6 +215,7 @@ header nav a:hover {
     display: flex; 
     margin-top: 72px;
     justify-content: flex-end;
+    
     
 }
 
@@ -207,7 +242,7 @@ header nav a:hover {
     .cta .cta-text {
         margin-top: 3rem;
         margin-left: 6rem;
-          /* border: 2px solid red;    */
+              
     }
     .cta img {
          display: none; 
@@ -217,7 +252,10 @@ header nav a:hover {
 
 @media (max-width: 500px) {
     .cta .cta-text {
-        margin-top: 5rem;
+        margin-top: 6rem;
+        margin-right: .5rem;
+        width: 100%;
+        /* border: 2px solid red;  */
     }
 }
 
@@ -252,18 +290,39 @@ header nav a:hover {
     .main-content {
        width: 90%;
        margin-left: 2.5rem;
-        /* border: 2px solid red;  */
+        
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        width: 100%;
+        /* border: 2px solid red;   */
+    }
     }
 }
 
 .main-content .top-content {
     display: flex;
-    /* border: 2px solid red; */
+    
+     
 }
 
 @media (max-width: 800px) {
     .ft-div {
         margin-right: 1rem;
+        
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-content .top-content {
+    flex-direction: column;
+    /* border: 2px solid red;  */
+   }   
+    .ft-div {
+    /* border: 2px solid red;  */
+    margin-bottom: 2rem;
     }
 }
 
@@ -284,12 +343,30 @@ header nav a:hover {
 
 .main-content .bottom-content {
     display: flex;
+    
+}
+
+@media (max-width: 500px) {
+ .main-content .bottom-content {
+     flex-direction: column;
+ }
 }
 
 
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    /* border: 2px solid red; */
+}
+
+@media (max-width: 500px) {
+    .services-content {
+        margin-bottom: 2rem;
+    }
+
+    .product-content {
+        margin-bottom: 2rem;
+    }
 }
 
 
