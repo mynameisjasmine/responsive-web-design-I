@@ -139,15 +139,13 @@ header nav {
 
 @media (max-width: 500px) {
     header nav {
-          border: 2px solid red;
-
-        
-         width: 100%;
+        /* border: 2px solid red;  */
+        width: 100%;
         flex-direction: column;
         /* padding: 0; */
         /* align-items: center; */
-        /* position: relative; */
-        /* right: 9rem;  */
+        position: relative; 
+         right: 2.5rem;  
         margin-top: -1rem;
         
         
@@ -173,10 +171,11 @@ header nav {
 @media (max-width: 500px) {
     img.logo {
         position: relative;
-        top: -7.5rem;
-        right: 7rem;
+        top: -15rem;
+        right: 8.5rem;
         padding-top: 2rem;
-         /* border: 2px solid red; */
+        
+          /* border: 2px solid red;  */
             
     }
 }
@@ -199,16 +198,29 @@ header nav a:hover {
     header nav a {
     border-top: 1px solid gray;
     width: 100%;
+    font-size: 1.1rem;
+    
+    
+    
     
     
     } 
 }  
+    
+@media (max-width: 500px) {
     .nav-link {
-         /* padding: 10px 0; */
-        /*border: 2px solid red; */
+        /* border: 2px solid red; */
+        text-align: center;
+        padding: .5rem 0rem;
     }
 
-
+    .contact-link {
+        text-align: center;
+        border-bottom: 1px solid gray; 
+        text-align: center; 
+        padding: .5rem 0rem;
+    }
+}
  
 
 
@@ -253,7 +265,7 @@ header nav a:hover {
 
 @media (max-width: 500px) {
     .cta .cta-text {
-        margin-top: 6rem;
+        margin-top: 14rem;
         margin-right: 5rem;
         width: 100%;
         /* border: 2px solid red;   */
