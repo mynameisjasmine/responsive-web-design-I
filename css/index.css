@@ -77,12 +77,13 @@ h1, h2, h3, h4, h5 {
         }
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .container {
-        width: 90%;
+        width: 100%;
+    }
         
-       /* border: 2px solid red;   */
-    }  
+        /* border: 2px solid red;   
+      */
         
 }
 
@@ -198,15 +199,15 @@ header nav a:hover {
     header nav a {
     border-top: 1px solid gray;
     width: 100%;
-    position: relative;
-    left: 11rem;
-    } 
     
+    
+    } 
+}  
     .nav-link {
          /* padding: 10px 0; */
         /*border: 2px solid red; */
     }
-}
+
 
  
 
@@ -253,9 +254,9 @@ header nav a:hover {
 @media (max-width: 500px) {
     .cta .cta-text {
         margin-top: 6rem;
-        margin-right: .5rem;
+        margin-right: 5rem;
         width: 100%;
-        /* border: 2px solid red;  */
+        /* border: 2px solid red;   */
     }
 }
 
@@ -295,8 +296,9 @@ header nav a:hover {
 
 @media (max-width: 500px) {
     .main-content {
-        width: 100%;
-        /* border: 2px solid red;   */
+        width: 93%;
+        /* border: 2px solid red; */
+        margin: 4rem 2rem 0 1rem;   
     }
     }
 }
@@ -336,8 +338,18 @@ header nav a:hover {
 @media (max-width: 800px) {
     .main-content .middle-img {
         width: 100%;
+        
     }
 }
+
+@media (max-width: 500px) {
+    .main-content .middle-img {
+        width: 100%;
+        margin-right: .5rem;
+        /* border: 2px solid red; */
+    }
+}
+
 
 
 
@@ -378,6 +390,13 @@ header nav a:hover {
 @media (max-width: 800px) {
     .contact {
         margin: 0 44px;
+        /* border: 2px solid red;  */
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        margin: 2rem 3rem 0 1rem;
         /* border: 2px solid red;  */
     }
 }
