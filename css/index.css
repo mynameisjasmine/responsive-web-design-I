@@ -64,28 +64,53 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 880px; 
     margin: auto;
-}
+    
+} 
 
 @media(max-width: 800px){
-    container {
+    .container {
       width: 100%;
+       /* border: 2px solid red;  
+    }  */
+        }
+}
+
+@media(max-width:500px) {
+    .container {
+        width: 100%;
     }
+        
+        /* border: 2px solid red;   
+      */
         
 }
 
 
-/* Header Styles */
+
 
 header {
     width: 100%;
     display: flex;
+    /* border: 2px solid red; */
 }
 
 @media (max-width: 800px) {
     header {
         flex-wrap: wrap;
+        /* border: 2px solid red;  */
+        width: 90%;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 2.5rem;
+        width: 100%;
+        /* border: 2px solid red;    */
+         
     }
 }
 
@@ -94,19 +119,69 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+    /* border: 2px solid red;  */
 }
 
 
 @media (max-width: 800px) {
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        /* width: 768px; */
+        margin: 10px 0px 0px 50px; 
+        width: 90%;
+        padding: 0px 0px 0px 50px;
         position: relative;
         top: 90px;
-    
-    
+        
+         /* border: 2px solid red;  */
+    }
+
+}
+
+@media (max-width: 500px) {
+    header nav {
+        /* border: 2px solid red;  */
+        width: 100%;
+        flex-direction: column;
+        /* padding: 0; */
+        /* align-items: center; */
+        position: relative; 
+         right: 2.5rem;  
+        margin-top: -1rem;
+        
+        
+        
+            
     }
 }
+
+      img.logo {
+    margin: 28px 0 0 91px;
+      /* border: 2px solid red;   */
+} 
+
+@media (max-width: 800px) {
+    img.logo {
+         /* border: 2px solid red;  */
+        margin: 2rem 0 0 20rem;
+        position: relative; 
+        top: -2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    img.logo {
+        position: relative;
+        top: -15rem;
+        right: 8.5rem;
+        padding-top: 2rem;
+        
+          /* border: 2px solid red;  */
+            
+    }
+}
+
+
+
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
@@ -117,32 +192,43 @@ header nav a:hover {
     color: black;
 }
 
-  header.logo {
-    margin: 28px 0 0 91px;
 
+@media (max-width: 500px) {
 
-}
-
-@media (max-width: 800px) {
-    header.logo {
-       /* order: -1; */
-       /* display: block; */
-       /* margin: 30px auto left; */
-       position: relative;
+    header nav a {
+    border-top: 1px solid gray;
+    width: 100%;
+    font-size: 1.1rem;
     
-     }
+    
+    
+    
+    
+    } 
+}  
+    
+@media (max-width: 500px) {
+    .nav-link {
+        /* border: 2px solid red; */
+        text-align: center;
+        padding: .5rem 0rem;
+    }
 
-   }
+    .contact-link {
+        text-align: center;
+        border-bottom: 1px solid gray; 
+        text-align: center; 
+        padding: .5rem 0rem;
+    }
+}
+ 
 
-
-
-
-/* Call To Action (CTA) Styles */
 
 .cta {
     display: flex; 
     margin-top: 72px;
     justify-content: flex-end;
+    
     
 }
 
@@ -167,10 +253,22 @@ header nav a:hover {
 
 @media (max-width: 800px) {
     .cta .cta-text {
-        margin: 0;
+        margin-top: 3rem;
+        margin-left: 6rem;
+              
     }
     .cta img {
-        display: none;
+         display: none; 
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .cta .cta-text {
+        margin-top: 14rem;
+        margin-right: 5rem;
+        width: 100%;
+        /* border: 2px solid red;   */
     }
 }
 
@@ -203,12 +301,43 @@ header nav a:hover {
 
 @media (max-width: 800px) {
     .main-content {
-        margin: 75px 20px 35px;
+       width: 90%;
+       margin-left: 2.5rem;
+        
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        width: 93%;
+        /* border: 2px solid red; */
+        margin: 4rem 2rem 0 1rem;   
+    }
     }
 }
 
 .main-content .top-content {
     display: flex;
+    
+     
+}
+
+@media (max-width: 800px) {
+    .ft-div {
+        margin-right: 1rem;
+        
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-content .top-content {
+    flex-direction: column;
+    /* border: 2px solid red;  */
+   }   
+    .ft-div {
+    /* border: 2px solid red;  */
+    margin-bottom: 2rem;
+    }
 }
 
 .main-content .middle-img {
@@ -221,22 +350,50 @@ header nav a:hover {
 @media (max-width: 800px) {
     .main-content .middle-img {
         width: 100%;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .main-content .middle-img {
+        width: 100%;
+        margin-right: .5rem;
+        /* border: 2px solid red; */
     }
 }
 
 
 
+
 .main-content .bottom-content {
     display: flex;
+    
+}
+
+@media (max-width: 500px) {
+ .main-content .bottom-content {
+     flex-direction: column;
+ }
 }
 
 
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    /* border: 2px solid red; */
 }
 
-/* Contact Styles */
+@media (max-width: 500px) {
+    .services-content {
+        margin-bottom: 2rem;
+    }
+
+    .product-content {
+        margin-bottom: 2rem;
+    }
+}
+
+
 
 .contact p {
     margin: 15px 0;
@@ -244,11 +401,19 @@ header nav a:hover {
 
 @media (max-width: 800px) {
     .contact {
-        margin: 0 30px;
+        margin: 0 44px;
+        /* border: 2px solid red;  */
     }
 }
 
-/* Footer Styles */
+@media (max-width: 500px) {
+    .contact {
+        margin: 2rem 3rem 0 1rem;
+        /* border: 2px solid red;  */
+    }
+}
+
+
 
 footer {
     text-align: center;
